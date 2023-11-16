@@ -15,9 +15,12 @@ export class AuthController {
   }
 
 
-  @Post("/login")
-  async loginuser(@Body() LoginUserDto:LoginUserDto) {
-    return await this.authService.loginUser(LoginUserDto)
+  // @Post("/login")
+  // async loginuser(@Body() LoginUserDto:LoginUserDto) {
+  //   return await this.authService.loginUser(LoginUserDto)
+  //   const user = await this.authService.loginUser(LoginUserDto)
+  //   const token = await this.authService.generateJwtAccessToken(user.id)
+  //   return token
   }
 
 
@@ -26,4 +29,4 @@ export class AuthController {
 
 
 
-}
+//}
